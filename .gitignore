@@ -1,3 +1,17 @@
+<<<<<<< HEAD
 node_modules/
 .env
 dist/
+=======
+# amplify generated files
+.amplify
+amplifyconfiguration*
+
+# node modules
+node_modules
+
+# next generated files
+.next
+
+# amplify
+>>>>>>> c3e03d39285ed253e87c8f145ca6b380e417c99c
