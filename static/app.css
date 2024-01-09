@@ -1,0 +1,27 @@
+/* app.css */
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #editor {
+    flex-grow: 1;
+    width: 70%;
+    margin-right: 20px; 
+  }
+  
+  #annotations-container {
+    width: 30%;
+  }
+  
+  .editor-controls {
+    padding: 10px;
+    background: #f5f5f5;
+  }
+  
+  .annotation {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px; 
+  }

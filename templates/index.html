@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RegReview Editor</title>
+  
+  <!-- Existing Quill stylesheet -->
+  <link href="{{ url_for('static', filename='quill.snow.css') }}" rel="stylesheet">
+
+  <!-- Added line to include custom CSS -->
+  <link href="{{ url_for('static', filename='app.css') }}" rel="stylesheet">
+
+  <style>
+    .editor-container {
+      display: flex; 
+    }
+
+    #editor {
+      height: 400px;
+      width: 70%;
+    }
+
+    #annotations-container {
+      width: 30%;
+      padding: 10px;
+      overflow-y: auto; 
+    }
+
+    .annotation {
+      border: 1px solid #ccc;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="editor-container">
+
+    <div id="editor"></div>
+
+    <div id="annotations-container">
+      <!-- Annotations here -->
+    </div>
+
+  </div>
+
+  <script src="{{ url_for('static', filename='quill.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>
